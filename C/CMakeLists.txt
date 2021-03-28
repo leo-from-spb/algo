@@ -1,7 +1,10 @@
-cmake_minimum_required(VERSION 3.19)
-project(C C)
+cmake_minimum_required(VERSION 3.13)
+project(Algo)
+set(CMAKE_CXX_STANDARD 14)
 
-set(CMAKE_C_STANDARD 11)
+# Add main.cpp file of project root directory as source file
+set(SOURCE_FILES LuckyTicket/LuckyTicket.c)
 
-add_executable(C
-        LuckyTicket/LuckyTicket.c)
+# Add executable target with source files listed in SOURCE_FILES variable
+add_executable(simple_example ${SOURCE_FILES})
+
